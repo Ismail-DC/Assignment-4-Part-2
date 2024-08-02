@@ -5,30 +5,33 @@
     a JavaScript-powered image gallery
 	-->
 
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Image Gallery</title>
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
 
-    <title>Image gallery</title>
+      <h1>Image gallery example</h1>
+      <div class="full-img">
+        <!-- Displayed image with initial source and alt text -->
+        <img class="displayed-img" src="images/pic1.jpg" alt="Closeup of a blue human eye">
 
-    <link rel="stylesheet" href="style.css">
-    
-  </head>
+        <!-- Overlay for darken/lighten effect -->
+        <div class="overlay"></div>
 
-  <body>
-    <h1>Image gallery example</h1>
+        <!-- Button to toggle darken/lighten effect -->
+        <button class="dark">Darken</button>
 
-    <div class="full-img">
-      <img class="displayed-img" src="images/pic1.jpg" alt="Closeup of a human eye">
-      <div class="overlay"></div>
-      <button class="dark">Darken</button>
-    </div>
+      </div>
+      <!-- Container for thumbnail images -->
+      <div class="thumb-bar"></div>
 
-    <div class="thumb-bar">
+      <!-- Linking to external JavaScript file -->
+      <script src="js/main.js"></script>
 
-
-    </div>
-    <script src="main.js"></script>
-  </body>
-</html>
+    </body>
+    </html>
